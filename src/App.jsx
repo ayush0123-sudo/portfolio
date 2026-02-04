@@ -33,7 +33,6 @@ const App = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Summary', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
@@ -84,13 +83,10 @@ const App = () => {
       {/* Navbar */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-950/90 backdrop-blur-md border-b border-slate-800 py-3' : 'bg-transparent py-5'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <div className="p-2 bg-cyan-500/10 rounded-lg border border-cyan-500/20">
-              <Shield className="w-6 h-6 text-cyan-400" />
-            </div>
-            <span className="text-xl font-bold tracking-tight">
+          <div className="flex items-center space-x-2"><a href='#hero'><span className="text-xl font-bold tracking-tight">
               AYUSH<span className="text-cyan-400">UNIYAL</span>
-            </span>
+            </span></a>
+           
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -122,7 +118,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-44 pb-24 overflow-hidden">
+      <section id='hero' className="relative pt-44 pb-24 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -322,7 +318,7 @@ const App = () => {
       {/* Footer */}
       <footer className="py-12 border-t border-slate-900 text-center">
         <p className="text-slate-500 text-xs uppercase tracking-widest">
-          © 2024 Ayush Uniyal • SOC Analyst • Professional Portfolio
+          © 2026 Ayush Uniyal • Made with ❤️
         </p>
       </footer>
     </div>
